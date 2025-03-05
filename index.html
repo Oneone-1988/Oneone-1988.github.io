@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery | Personal Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>My Art Gallery</h1>
+                <p>A collection of personal artworks</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery" class="gallery">
+            <h2>Featured Works</h2>
+            <div class="gallery-container">
+                <!-- Artwork 1 -->
+                <div class="artwork">
+                    <div class="artwork-image">
+                        <img src="images/artwork1.jpg" alt="Abstract Landscape">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Abstract Landscape</h3>
+                        <p class="artwork-medium">Oil on Canvas, 2023</p>
+                        <p class="artwork-description">An exploration of natural forms through vibrant colors and dynamic brushstrokes, creating a dreamlike interpretation of a mountain landscape.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 2 -->
+                <div class="artwork">
+                    <div class="artwork-image">
+                        <img src="images/artwork2.jpg" alt="Urban Reflections">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Urban Reflections</h3>
+                        <p class="artwork-medium">Acrylic on Panel, 2022</p>
+                        <p class="artwork-description">A study of city architecture and its reflection in water, playing with light and shadow to create a sense of urban tranquility.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 3 -->
+                <div class="artwork">
+                    <div class="artwork-image">
+                        <img src="images/artwork3.jpg" alt="Portrait Study">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Portrait Study</h3>
+                        <p class="artwork-medium">Charcoal on Paper, 2023</p>
+                        <p class="artwork-description">An intimate portrait exploring human emotion through careful attention to facial expression and subtle tonal variations.</p>
+                    </div>
+                </div>
+
+                <!-- Add more artwork entries as needed -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About the Artist</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/artist.jpg" alt="Artist Photo">
+                </div>
+                <div class="about-text">
+                    <p>Welcome to my personal art gallery. I am passionate about exploring various artistic mediums and techniques to express my unique perspective on the world around us.</p>
+                    <p>My work is influenced by both natural landscapes and urban environments, seeking to find beauty in the ordinary and extraordinary alike.</p>
+                    <p>Each piece represents a moment of exploration and discovery, and I'm delighted to share these journeys with you through this online gallery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Interested in my work or have questions? Feel free to reach out.</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:oneone.wang@outlook.com">oneone.wang@outlook.com</a></p>
+                <div class="social-links">
+                    <!-- Add your social media links here if desired -->
+                    <!-- <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Art Gallery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
